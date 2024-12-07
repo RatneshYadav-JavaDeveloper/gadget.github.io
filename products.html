@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Gadget Shop Website Template</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .centered-text {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .highlighted-text {
+            background-color: yellow;
+            padding: 0 5px;
+            display: inline-block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+        }
+        .bold-white-text {
+            color: white;
+            font-weight: bold;
+        }
+        #footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        #footer ul li a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        #footer ul li a:hover {
+            color: #ddd;
+        }
+        /* Message style */
+        #noResultsMessage {
+            display: none;
+            color: red;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+		#logo {
+        width: 172px;
+        height: 172px;
+        border-radius: 50%; /* This makes the div round */
+        overflow: hidden; /* Ensures the image inside fits within the round shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the entire area without distorting */
+    }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <div>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="index.html"><span>Home</span></a>
+            </li>
+            <li class="products current">
+                <a href="products.html"><span>Products</span></a>
+            </li>
+            <li class="about">
+                <a href="about.html"><span>About</span></a>
+            </li>
+            <li class="blog">
+                <a href="blog.html"><span>Blog</span></a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <span id="background"></span>
+    </div>
+</div>
+<br>
+<div class="centered-text">
+	<span class="highlighted-text">* Added search boxes below to allow users to input search queries and display headphones dynamically using the JavaScript onKeyUp event.*</span>
+</div>
+<div id="body">
+    <div>
+        <div>
+			
+            <div>
+                <div>
+					
+                    <!-- Search Box for Headphones -->
+                    <div style="text-align: center; margin-bottom: 0px;">
+                        <input 
+                            type="text" 
+                            id="searchBox" 
+                            placeholder="Search headphones by name..." 
+                            style="padding: 10px; width: 60%; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;"
+                            onkeyup="searchHeadphones()"
+                        >
+
+                    </div>
+					
+                    <!-- Updated Products Section -->
+                    <ul style="position: relative;top: -200px;">
+                        <li>
+                            <a href="products.html"><img src="images/headphone1.png" alt="Image"></a>
+                            <h2><a href="products.html">Sony</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone2.png" alt="Image"></a>
+                            <h2><a href="products.html">Bose</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone3.png" alt="Image"></a>
+                            <h2><a href="products.html">JBL</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone4.png" alt="Image"></a>
+                            <h2><a href="products.html">Apple AirPods</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone5.png" alt="Image"></a>
+                            <h2><a href="products.html">Sennheiser</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone6.png" alt="Image"></a>
+                            <h2><a href="products.html">Anker</a></h2>
+                        </li>
+						<li>
+                            <a href="products.html"><img src="images/headphone7.png" alt="Image"></a>
+                            <h2><a href="products.html">SkullCancy</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone8.png" alt="Image"></a>
+                            <h2><a href="products.html">Mivi</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone9.png" alt="Image"></a>
+                            <h2><a href="products.html">Nokia</a></h2>
+                        </li>
+						<li>
+                            <a href="products.html"><img src="images/headphone1.png" alt="Image"></a>
+                            <h2><a href="products.html">Sony</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone2.png" alt="Image"></a>
+                            <h2><a href="products.html">Bose</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone3.png" alt="Image"></a>
+                            <h2><a href="products.html">JBL</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone4.png" alt="Image"></a>
+                            <h2><a href="products.html">Apple AirPods</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone5.png" alt="Image"></a>
+                            <h2><a href="products.html">Sennheiser</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone6.png" alt="Image"></a>
+                            <h2><a href="products.html">Anker</a></h2>
+                        </li>
+						<li>
+                            <a href="products.html"><img src="images/headphone7.png" alt="Image"></a>
+                            <h2><a href="products.html">SkullCancy</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone8.png" alt="Image"></a>
+                            <h2><a href="products.html">Mivi</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone9.png" alt="Image"></a>
+                            <h2><a href="products.html">Nokia</a></h2>
+                        </li>
+						<li>
+                            <a href="products.html"><img src="images/headphone1.png" alt="Image"></a>
+                            <h2><a href="products.html">Sony</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone2.png" alt="Image"></a>
+                            <h2><a href="products.html">Bose</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone3.png" alt="Image"></a>
+                            <h2><a href="products.html">JBL</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone4.png" alt="Image"></a>
+                            <h2><a href="products.html">Apple AirPods</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone5.png" alt="Image"></a>
+                            <h2><a href="products.html">Sennheiser</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone6.png" alt="Image"></a>
+                            <h2><a href="products.html">Anker</a></h2>
+                        </li>
+						<li>
+                            <a href="products.html"><img src="images/headphone7.png" alt="Image"></a>
+                            <h2><a href="products.html">SkullCancy</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone8.png" alt="Image"></a>
+                            <h2><a href="products.html">Mivi</a></h2>
+                        </li>
+                        <li>
+                            <a href="products.html"><img src="images/headphone9.png" alt="Image"></a>
+                            <h2><a href="products.html">Nokia</a></h2>
+                        </li>
+                    </ul>
+
+                    <!-- No Results Message -->
+                    <div id="noResultsMessage">Oops! Headphones not found</div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<span class="highlighted-text" style="position: relative;left: 35%;font-weight: bold;top: -150px;">* Updated the products with real brand names and added more products. *</span>
+<div id="footer">
+    <div>
+        <div>
+            <h3>Blog</h3>
+            <p>A detailed roundup of the best headphones available in 2024, highlighting their sound quality, comfort, design, and battery life. This blog can include recommendations for various use cases like gaming, music production, or casual listening.</p>
+        </div>
+        <div>
+            <h3>Get Social</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100009042482392" target="_blank" id="facebook"></a>
+                    <a href="https://www.instagram.com/pankaj.pikachu?igsh=ZjFpemdxeTdsZjA3" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer style="position: relative;top: -100px;">
+    <p class="bold-white-text">Created by Ray Yadav Pankaj - ID: 24314074</p>
+</footer>
+
+<!-- JavaScript for Search Functionality -->
+<script>
+    function searchHeadphones() {
+        const query = document.getElementById('searchBox').value.toLowerCase();
+        const products = document.querySelectorAll('#body ul li');
+        let found = false;
+
+        if (query === "") {
+            // If the search box is empty, display all products and hide the "not found" message
+            products.forEach(product => {
+                product.style.display = 'block';
+            });
+            document.getElementById('noResultsMessage').style.display = 'none';
+            return;
+        }
+
+        // If the search box is not empty, filter products based on the query
+        products.forEach(product => {
+            const name = product.querySelector('h2 a').innerText.toLowerCase();
+            if (name.includes(query)) {
+                product.style.display = 'block';
+                found = true;
+            } else {
+                product.style.display = 'none';
+            }
+        });
+
+        // Show "Oops! Headphones not found" if no product matches
+        const noResultsMessage = document.getElementById('noResultsMessage');
+        if (!found) {
+            noResultsMessage.style.display = 'block';
+        } else {
+            noResultsMessage.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
