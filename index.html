@@ -46,6 +46,30 @@
 			font-weight: bold;
 			margin: 10px 0;
 		}
+
+		/* Specific CSS for the #changes-list */
+		#changes-list {
+			background-color: white;
+			color: black;
+			padding: 20px;
+			font-size: 14px;
+			text-align: left; /* Align text to the left */
+		}
+
+		#changes-list .small-text {
+			font-size: 14px; /* Set font size for p, h1, and h2 */
+			text-align: left; /* Ensure text starts from left */
+			color: black; /* Apply black color without bold */
+		}
+
+		/* Make h1 and h2 text slightly bigger but still smaller than default */
+		#changes-list .small-text1 {
+			font-size: 16px;
+		}
+
+		#changes-list .small-text2{
+			font-size: 15px;
+		}
 		#logo {
         width: 172px;
         height: 172px;
@@ -61,6 +85,7 @@
         height: 100%;
         object-fit: cover; /* Ensures the image covers the entire area without distorting */
     }
+
 	</style>
 	<script>
 		// JavaScript Code for adding welcome message dynamically
@@ -73,9 +98,36 @@
 	</script>
 </head>
 <body>
-	<div class="centered-text">
+		<div class="centered-text">
 		<span class="highlighted-text">* A welcome message has been added dynamically using a JavaScript function. *</span>
 	</div>
+	<div id="changes-list">
+        <h1 class="small-text small-text1">Updates by Ray Yadav Pankaj</h1>
+        <h2 class="small-text small-text2">HOME PAGE CHANGES:</h2>
+        <p class="small-text">
+			1. Added a dynamic message to display on the homepage when the page loads by using a JavaScript function and the `DOMContentLoaded` eventListener. The message is appended to the body tag at the top of the page.<br>
+			2. Updated the circle logo with the previous one.<br>
+			3. Created a new banner using Canva and replaced it with the old banners.<br>
+			4. Added "Live Music" text on the banners using the HTML h1 tag for larger text, and CSS attributes such as position, top, left for alignment, and color for styling the text.<br>
+			5. Updated all the products with their real brand names.<br>
+			6. Added the text <strong>Click here to see more products >></strong> with an HTML anchor tag to redirect from the home page to the product page. The same functionality was applied to all products displayed under the featured products section.<br>
+			7. Updated all the blog content in the footer section with relevant content.<br>
+			8. Added social media icons using the Font Awesome CDN for icons and HTML anchor tags for redirection.<br>
+			9. Created a footer section using the footer tag and p tag to display my name and ID. Applied CSS attributes for color and font-weight to make the text bolder.
+		</p>
+		
+        <p class="small-text"> <Strong>NOTE: The footer section has the same details across all pages.</Strong></p>
+        
+        <h2 class="small-text">PRODUCT PAGE CHANGES:</h2>
+        <p class="small-text">
+			10. Added search boxes on the product page to take input from users and dynamically display the searched headphones using the JavaScript onKeyUp event.<br>
+			11. If headphones are not found, JavaScript is used to hide the product section and display a message: <strong>Oops! Headphones not found.</strong> CSS attributes like color, margin-top for spacing, font-size for larger text, and font-weight for bold styling were applied.<br>
+			12. Increased the number of products to over 20 to improve the appearance of the product page.
+		</p>
+        <h2 class="small-text small-text2">ABOUT PAGE  & BLOG PAGES CHANGES</h2>
+        <p class="small-text">13. Updated all the contents on the About & Blog with relevant information.</p>
+       
+    </div>
 	<br>
 	<div class="centered-text">
 		<span class="highlighted-text">* Replaced the default circle logo with a custom one. *</span>
@@ -103,7 +155,7 @@
 		<div>
 			<div id="figure">
 				<div>
-					<h1>Live Music</h1>
+					<h1 style="position: relative;left: -150px;">Live Music</h1>
 				</div>
 			</div>
 		</div>
@@ -121,59 +173,56 @@
 						<ul>
 							<li>
 								<a href="products.html"><img src="images/headphone1.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Sony</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone2.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Bose</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone3.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">JBL</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone4.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Apple AirPods</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone5.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Sennheiser</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone6.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Anker</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone7.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">SkullCancy</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone8.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Mivi</a></h2>
 							</li>
 							<li>
 								<a href="products.html"><img src="images/headphone9.png" alt="Image"></a>
-								<h2><a href="products.html">Product</a></h2>
+								<h2><a href="products.html">Urban Ears</a></h2>
 							</li>
-							
-
+							<h2><a href="products.html">Click here to see more products >></a></h2>
 						</ul>
-						<span class="highlighted-text" style="position: relative;left: 15%;font-weight: bold;">* Added the section above for featured products and increased the number of products displayed. *</span>
+						<span class="highlighted-text" style="position: relative;left: 20%;">* Added the section above for featured products and increased the number of products displayed. </span>
 					</div>
 				</div>
+				
 			</div>
+			
 		</div>
+		
 	</div>
-	
-	<!-- Footer -->
 	<div id="footer">
 		<div>
 			<div>
 				<h3>Blog</h3>
-				<p>
-					A detailed roundup of the best headphones available in 2024, highlighting their sound quality, comfort, design, and battery life. This blog can include recommendations for various use cases like gaming, music production, or casual listening.
-				</p>
-				<span class="highlighted-text" style="font-weight: bold;">* Blog content has been updated for relevancy. *</span>
+				<p>A detailed roundup of the best headphones available in 2024, highlighting their sound quality, comfort, design, and battery life. This blog can include recommendations for various use cases like gaming, music production, or casual listening.</p>
 			</div>
 			<div>
 				<h3>Get Social</h3>
@@ -183,14 +232,12 @@
 						<a href="https://www.instagram.com/pankaj.pikachu?igsh=ZjFpemdxeTdsZjA3" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
 					</li>
 				</ul>
-				<span class="highlighted-text" style="font-weight: bold;">* Added social media icons with functional links. *</span>
 			</div>
 		</div>
-		<footer>
-			<p class="bold-white-text">Created by Ray Yadav Pankaj - ID: 24314074</p>
-			<span class="highlighted-text" style="font-weight: bold;">* Footer includes creator info and new structure. *</span>
-		</footer>
-
 	</div>
+	<footer style="position: relative;top: -100px;">
+		<p class="bold-white-text">Created by Ray Yadav Pankaj - ID: 24314074</p>
+	</footer>
+	
 </body>
 </html>
