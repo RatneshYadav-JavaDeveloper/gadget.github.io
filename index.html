@@ -88,12 +88,16 @@
 
 	</style>
 	<script>
+			alert("Welcome to My Gadget Shop Website!");
 		// JavaScript Code for adding welcome message dynamically
 		document.addEventListener('DOMContentLoaded', function () {
 			const welcomeMessage = document.createElement('div');
 			welcomeMessage.id = 'welcome-message';
 			welcomeMessage.textContent = 'Welcome to My Gadget Shop Website!';
 			document.body.prepend(welcomeMessage);
+
+			// Displaying an alert popup with a welcome message
+		
 		});
 	</script>
 </head>
@@ -209,7 +213,7 @@
 							</li>
 							<h2><a href="products.html">Click here to see more products >></a></h2>
 						</ul>
-						<span class="highlighted-text" style="position: relative;left: 20%;">* Added the section above for featured products and increased the number of products displayed. </span>
+						<span class="highlighted-text" style="position: relative;left: 20%;font-weight: bold;">* Added the section above for featured products and increased the number of products displayed. </span>
 					</div>
 				</div>
 				
@@ -223,20 +227,29 @@
 			<div>
 				<h3>Blog</h3>
 				<p>A detailed roundup of the best headphones available in 2024, highlighting their sound quality, comfort, design, and battery life. This blog can include recommendations for various use cases like gaming, music production, or casual listening.</p>
+				<span class="highlighted-text"  style="color: black;font-weight: bold;">* Updated all the blog content in the footer section with relevant content.*</span>
 			</div>
 			<div>
 				<h3>Get Social</h3>
 				<ul>
 					<li>
 						<a href="https://www.facebook.com/profile.php?id=100009042482392" target="_blank" id="facebook"></a>
-						<a href="https://www.instagram.com/pankaj.pikachu?igsh=ZjFpemdxeTdsZjA3" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.instagram.com/pankaj.pikachu?igsh=ZjFpemdxeTdsZjA3" target="_blank" id="instagram"><i class="fab fa-instagram fa-2x"></i></a>
 					</li>
+					<br>
+					<span class="highlighted-text" style="font-weight: bold;">* Added social media icons using the Font Awesome CDN for icons and HTML anchor tags for redirection.*</span>
 				</ul>
+				
 			</div>
+				
+		
 		</div>
 	</div>
 	<footer style="position: relative;top: -100px;">
 		<p class="bold-white-text">Created by Ray Yadav Pankaj - ID: 24314074</p>
+		<div class="centered-text">
+			<span class="highlighted-text"  style="color: black;">* Custom banners have been added above this section. *</span>
+		</div>
 	</footer>
 	
 </body>
